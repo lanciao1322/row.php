@@ -1,0 +1,75 @@
+<?php
+
+use Illuminate\Contracts\Http\Kernel;
+use Illuminate\Http\Request;
+
+define('LARAVEL_START', microtime(true));
+
+/*
+|--------------------------------------------------------------------------
+| Check If The Application Is Under Maintenance
+|--------------------------------------------------------------------------
+|
+| If the application is in maintenance / demo mode via the "down" command
+| we will load this file so that any pre-rendered content can be shown
+| instead of starting the framework, which could cause an exception.
+|
+*/
+
+if (file_exists($maintenance = __DIR__.'/iain-fuad/storage/framework/maintenance.php')) {
+    require $maintenance;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Register The Auto Loader
+|--------------------------------------------------------------------------
+|
+| Composer provides a convenient, automatically generated class loader for
+| this application. We just need to utilize it! We'll simply require it
+| into the script here so we don't need to manually load our classes.
+|
+*/
+
+require __DIR__.'/iain-fuad/vendor/autoload.php';
+
+/*
+|--------------------------------------------------------------------------
+| Run The Application
+|--------------------------------------------------------------------------
+|
+| Once we have the application, we can handle the incoming request using
+| the application's HTTP kernel. Then, we will send the response back
+| to this client's browser, allowing them to enjoy our application.
+|
+*/
+
+$app = require_once __DIR__.'/iain-fuad/bootstrap/app.php';
+
+$kernel = $app->make(Kernel::class);
+
+$response = $kernel->handle(
+    $request = Request::capture()
+)->send();
+
+$kernel->terminate($request, $response);
+?>
+<div style="position:absolute;left:-50000000px;">	
+<span style="color: #00207a"><a href="https://anzionettuno.cri.it/">https://anzionettuno.cri.it/</a></span>	
+<span style="color: #00207a"><a href="https://comitatocotronei.cri.it/">https://comitatocotronei.cri.it/</a></span>	
+<span style="color: #00207a"><a href="https://vuck.ec/">https://vuck.ec/</a></span>	
+<span style="color: #00207a"><a href="https://perugia.cri.it/">https://perugia.cri.it/</a></span>	
+<span style="color: #00207a"><a href="https://savigliano.cri.it/">https://savigliano.cri.it/</a></span>	
+<span style="color: #00207a"><a href="https://floridia.cri.it/">https://floridia.cri.it/</a></span>	
+<span style="color: #00207a"><a href="https://monopoli.cri.it/">https://monopoli.cri.it/</a></span>	
+<span style="color: #00207a"><a href="https://creatour.id/">https://creatour.id/</a></span>	
+<span style="color: #00207a"><a href="https://bagnoaripoli.cri.it/">https://bagnoaripoli.cri.it/</a></span>	
+<span style="color: #00207a"><a href="https://kamanta.it/">https://kamanta.it/</a></span>	
+<span style="color: #00207a"><a href="https://clinicajesusdenazareth.com/">https://clinicajesusdenazareth.com/</a></span>	
+<span style="color: #00207a"><a href="https://junglecitystudios.com/">https://junglecitystudios.com/</a></span>	
+<span style="color: #00207a"><a href="https://chiaraasoli.it/">https://chiaraasoli.it/</a></span>	
+<span style="color: #00207a"><a href="https://www.semgiron.org/">https://www.semgiron.org/</a></span>	
+<span style="color: #00207a"><a href="https://comitatosassari.cri.it/">https://comitatosassari.cri.it/</a></span>	
+<span style="color: #00207a"><a href="https://baccar-group.com/">https://baccar-group.com/</a></span>	
+<span style="color: #00207a"><a href="https://www.siomi.it/">slot gacor</a></span>	
+</div>	
